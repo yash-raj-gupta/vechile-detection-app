@@ -36,8 +36,8 @@ function UploadPage() {
         <h1 className="text-2xl font-bold">Vehicle Detection app </h1>
       </div>
     </nav>
-    <div className="mx-auto border-black flex flex-row justify-center items-center">
-    <div className="shadow-2xl mt-10 min-w-[50%] rounded-xl flex flex-col justify-center items-center bg-gray-300 p-4">
+    <div className="mx-auto border-black flex flex-row justify-center items-center ">
+    <div className="shadow-2xl my-8  min-w-[50%] rounded-xl flex flex-col justify-center p-8 items-center bg-gray-300 p-4">
       <h2 className="text-2xl font-bold mb-4">Upload Image</h2>
       <input type="file"
       accept='image/*'
@@ -46,8 +46,8 @@ function UploadPage() {
       {(selectedFile && !imageUrl) && (
           <div className="mt-8 flex flex-col justify-center items-center">
             <h2 className="text-2xl font-bold mb-4">Selected Image</h2>
-            <div className='w-[100%] h-[75%] items-center'>
-            <img src={URL.createObjectURL(selectedFile)} alt="Selected" className="w-1/2 mx-auto h-[50%] transform transition-transform hover:scale-110" />
+            <div className='w-[100%] h-[100%] items-center'>
+            <img src={URL.createObjectURL(selectedFile)} alt="Selected" className="w-[450px] mx-auto h-[350px] " />
             </div>
          
           </div>
@@ -57,17 +57,17 @@ function UploadPage() {
                disabled={isButtonDisabled} >
         Upload
       </button>
-      {imageUrl && (<div className='flex flex-row justify-center items-center '>
+      {imageUrl && (<div className='flex flex-row justify-center items-center gap-10 '>
         <div className="mt-8">
           <h2 className="text-2xl font-bold mb-4 items-center flex justify-center">Uploaded Image</h2>
           <div className='w-[100%] h-[100%] items-center'>
-            <img src={URL.createObjectURL(selectedFile)} alt="Selected" className="w-[75%] mx-auto h-[75%] transform transition-transform hover:scale-110" />
+            <img src={URL.createObjectURL(selectedFile)} alt="Selected" className="w-[450px] mx-auto h-[350px] transform transition-transform hover:scale-110" />
             </div>
         </div>
          <div className="mt-8">
          <h2 className="text-2xl font-bold mb-4 justify-center flex">Processed Image</h2>
          <div className='w-[100%] h-[100%] items-center'>
-            <img src={imageUrl} alt="Processed" className="w-[75%] mx-auto h-[75%] transform transition-transform hover:scale-110" />
+            <img src={imageUrl} alt="Processed" className="w-[450px] mx-auto h-[350px] transform transition-transform hover:scale-110" />
             </div>
        </div>
       </div>

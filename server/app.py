@@ -18,9 +18,9 @@ input_size = 320
 confThreshold = 0.2
 nmsThreshold = 0.2
 
-font_color = (0, 0, 255)
-font_size = 0.5
-font_thickness = 2
+font_color = (255, 0, 0)
+font_size = 2
+font_thickness = 4
 
 # Middle cross line position
 middle_line_position = 225
@@ -53,7 +53,7 @@ net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 
 # Define random colour for each class
 np.random.seed(42)
-colors = np.random.randint(0, 255, size=(len(classNames), 3), dtype='uint8')
+colors = np.random.randint(0, 255, size=(len(classNames), 4), dtype='uint8')
 
 # Function for finding the center of a rectangle
 def find_center(x, y, w, h):
@@ -88,7 +88,7 @@ def count_vehicle(box_id, img):
             down_list[index] = down_list[index] + 1
 
     # Draw circle in the middle of the rectangle
-    cv2.circle(img, center, 2, (0, 0, 255), -1)
+    cv2.circle(img, center, 4, (255, 0, 0), -1)
 
 # Function for finding the detected objects from the network output
 def postProcess(outputs, img):
@@ -120,9 +120,9 @@ def postProcess(outputs, img):
         detected_classNames.append(name)
         # Draw classname and confidence score
         cv2.putText(img, f'{name.upper()} {int(confidence_scores[i]*100)}%', (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX,
-                    0.5, color, 1)
+                    1, color, 2)
         # Draw bounding rectangle
-        cv2.rectangle(img, (x, y), (x + w, y + h), color, 1)
+        cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
         detection.append([x, y, w, h, required_class_index.index(classIds[i])])
 
     # Update the tracker for each object
