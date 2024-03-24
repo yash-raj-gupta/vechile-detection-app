@@ -52,3 +52,8 @@ https://github.com/yash-raj-gupta/vehicle-detection-app/assets/137718338/d071d69
 Ensure you have the necessary dependencies installed and configured properly, including the YOLOv3 model and its associated weights for vehicle detection. Refer to the project documentation for detailed instructions on setup and usage.
 
 Download the weights file for the python model o work properly for detection using the given [link](https://drive.google.com/file/d/1TFk3u7Jku6lidpGkRosCaVQdnJA-novh/view?usp=sharing)
+
+## Working
+
+Currently it can work on most of the traffic images and output depends on the quality and pixels of the image uploaded
+
