@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Vehicle Detection Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a vehicle detection system built using Flask, React, and YOLOv3 model. The main purpose of this project is to detect vehicles in images or videos and provide real-time insights. It combines the power of deep learning with web technologies to offer a seamless user experience for vehicle detection tasks.
+
+## Features
+
+- **Vehicle Detection:** Utilizes YOLOv3 (You Only Look Once) model for accurate and efficient vehicle detection in images or videos.
+- **Real-time Detection:** Provides real-time detection capabilities, making it suitable for applications such as traffic monitoring, parking management, and security systems.
+- **Web Interface:** Offers a user-friendly web interface built with React for easy interaction and visualization of the detection results.
+- **Customizable:** The project structure allows for easy customization and extension to suit specific requirements and use cases.
+
+## Tech Stack
+
+- **Frontend:**
+  - React: A JavaScript library for building user interfaces.
+  - CSS3: Styling the user interface.
+  
+- **Backend:**
+  - Flask: A lightweight WSGI web application framework in Python.
+  
+- **Deep Learning:**
+  - YOLOv3: A state-of-the-art real-time object detection algorithm for detecting vehicles.
 
 ## Available Scripts
 
@@ -8,63 +27,28 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Starts the frontend development server.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `python app.py`
 
-### `npm test`
+Starts the Flask backend server.\
+Open [http://localhost:5000](http://localhost:5000) to interact with the backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributing
 
-### `npm run build`
+If you encounter any issues, have suggestions for improvements, or wish to contribute to the project, feel free to open an issue or submit a pull request on the GitHub repository. Your contributions are highly appreciated and welcomed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Video Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://github.com/yash-raj-gupta/vehicle-detection-app/assets/137718338/d071d691-94c4-4dff-bb64-49035ff2d824
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Note
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ensure you have the necessary dependencies installed and configured properly, including the YOLOv3 model and its associated weights for vehicle detection. Refer to the project documentation for detailed instructions on setup and usage.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Download the weights file for the python model o work properly for detection using the given [link](https://drive.google.com/file/d/1TFk3u7Jku6lidpGkRosCaVQdnJA-novh/view?usp=sharing)
